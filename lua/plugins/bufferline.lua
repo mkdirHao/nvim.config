@@ -14,7 +14,7 @@ return {
           offsets = {
             {
               filetype = "neo-tree",
-              text = "Explorer",
+              text = "^_^ rm -rf /*",
               highlight = "Directory",
               separator = true,
             }
