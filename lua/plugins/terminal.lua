@@ -1,9 +1,12 @@
 return {
-{
-  -- amongst your other plugins
- -- {'akinsho/toggleterm.nvim', version = "*", config = true}
-  -- or
-  {'akinsho/toggleterm.nvim', version = "*", opts = {--[[ things you want to change go here]]}}
-}
 
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    opts = {},
+    keys = {
+      -- suggested keymap
+      { "<leader>t", "<cmd>ToggleTerm<cr>", desc = "open terminal" },
+    },
+  },
 }
