@@ -8,12 +8,15 @@ return {
   },
   config = function()
     require("neo-tree").setup({
+      window = {
+        width = 30,
+      },
       source_selector = {
         winbar = true,
         statusline = true,
       },
       close_if_last_window = false,
     })
-    vim.keymap.set("n", "<leader>e", ":Neotree toggle filesystem reveal left<CR>", {})
+    vim.keymap.set("n", "<leader>t", ":Neotree toggle filesystem reveal left<CR>", {desc="neotree left"})
   end,
 }

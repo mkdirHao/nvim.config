@@ -26,4 +26,4 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 -- no highlight for end search
-vim.keymap.set("n", "<leader>nh", ":nohlsearch<CR>")
+vim.keymap.set("n", "<leader>eh", ":nohlsearch<CR>",{desc="search obj no highlight"})

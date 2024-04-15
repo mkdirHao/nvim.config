@@ -10,10 +10,9 @@ return {
     end,
     keys = {
       {
-        "<leader>mp",
+        "<leader>ep",
         --ft = "markdown",
-        "<cmd>MarkdownPreviewToggle<cr>",
-        desc = "Markdown Preview",
+        "<cmd>MarkdownPreviewToggle<cr>",desc = "Markdown Preview",
       },
     },
     config = function()
@@ -40,7 +39,7 @@ return {
 
     keys = {
       -- suggested keymap
-      { "<leader>p", "<cmd>PasteImage<cr>", desc = "Paste image from system clipboard" },
+      { "<leader>p", "<cmd>PasteImage<cr>", desc = "paste image in md" },
     },
   },
 

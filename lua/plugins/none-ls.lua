@@ -12,6 +12,6 @@ return {
       },
     })
 
-    vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, {})
+    vim.keymap.set("n", "<leader>ef", vim.lsp.buf.format, {desc="code fmt"})
   end,
 }
