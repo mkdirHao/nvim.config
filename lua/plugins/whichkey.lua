@@ -27,7 +27,7 @@ return {
 
       wk.register({
         f = {
-          name = "File", -- optional group nam-- you can also pass functions!
+          name = "file", -- optional group nam-- you can also pass functions!
         },
       }, { prefix = "<leader>" })
       wk.register({
