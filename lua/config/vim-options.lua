@@ -25,5 +25,9 @@ vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
+-- vim define save ctrl s
+vim.keymap.set({'i'}, '<C-s>', '<C-o>:w<ENTER>')
+vim.keymap.set({'n'}, '<C-s>', ':w<ENTER>')
+
 -- no highlight for end search
 vim.keymap.set("n", "<leader>eh", ":nohlsearch<CR>",{desc="search obj no highlight"})

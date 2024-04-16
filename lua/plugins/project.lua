@@ -8,9 +8,11 @@ return {
 				auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
 				session_lens = {
 					buftypes_to_ignore = {}, -- list of buffer types what should not be deleted from current session
-					load_on_setup = true,
+					load_on_setup = false,
 					theme_conf = { border = true },
 					previewer = false,
+          auto_restore_enabled = false,
+          auto_save_enabled = true,
 				},
 				vim.keymap.set("n", "<leader>fp", require("auto-session.session-lens").search_session, {
           desc="file project | sessions",
