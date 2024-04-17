@@ -5,6 +5,7 @@ return {
 ---@type LazySpec
 {
   "mikavilpas/yazi.nvim",
+  enable=true,
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
@@ -16,7 +17,7 @@ return {
       function()
         require("yazi").yazi()
       end,
-      desc = "Open the yazi" ,
+      desc = "open the yazi" ,
     },
   },
   ---@type YaziConfig

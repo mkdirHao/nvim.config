@@ -2,6 +2,7 @@ return {
 
 	{
 		"rmagatti/auto-session",
+		enable = false,
 		config = function()
 			require("auto-session").setup({
 				log_level = "error",
@@ -11,14 +12,14 @@ return {
 					load_on_setup = false,
 					theme_conf = { border = true },
 					previewer = false,
-          auto_restore_enabled = false,
-          auto_save_enabled = true,
+					auto_restore_enabled = false,
+					auto_save_enabled = true,
 				},
-				vim.keymap.set("n", "<leader>fp", require("auto-session.session-lens").search_session, {
-          desc="file project | sessions",
+				vim.keymap.set("n", "<leader>fp", "<cmd>Autosession search<cr>", {
+					desc = "file project | sessions",
 					noremap = true,
 				}),
 			})
-		end
-	}
+		end,
+	},
 }

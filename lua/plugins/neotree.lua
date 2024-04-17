@@ -9,6 +9,7 @@ return {
   config = function()
     require("neo-tree").setup({
       window = {
+       position = "left",
         width = 30,
       },
       source_selector = {

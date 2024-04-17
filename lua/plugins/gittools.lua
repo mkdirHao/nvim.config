@@ -12,6 +12,7 @@ return {
   },
   {
     "kdheepak/lazygit.nvim",
+    enable=true,
     cmd = {
       "LazyGit",
       "LazyGitConfig",
@@ -26,7 +27,7 @@ return {
     -- setting the keybinding for LazyGit with 'keys' is recommended in
     -- order to load the plugin when the command is run for the first time
     keys = {
-      { "<leader>gl", "<cmd>LazyGit<cr>", desc = "lazygit" },
+      { "<leader>gl", "<cmd>LazyGitCurrentFile<cr>", desc = "lazygit" },
     },
   },
 }
