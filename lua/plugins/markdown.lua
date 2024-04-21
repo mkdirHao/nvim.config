@@ -41,7 +41,9 @@ return {
     },
   },
 
-  -- img preview but some mistake
+  -- img preview 
+  -- but have some mistake in tmux
+  -- it only work in kitty 
   {
     "vhyrro/luarocks.nvim",
     enabled = false,

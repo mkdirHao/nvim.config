@@ -2,7 +2,7 @@ return {
 
 	{
 		"rmagatti/auto-session",
-		enable = false,
+		enabled = false,
 		config = function()
 			require("auto-session").setup({
 				log_level = "error",
