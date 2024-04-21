@@ -61,11 +61,6 @@ return {
       -- animation = true,
       -- insert_at_start = true,
       -- …etc.
-      gitsigns = {
-        added = { enabled = true, icon = "+" },
-        changed = { enabled = true, icon = "~" },
-        deleted = { enabled = true, icon = "-" },
-      },
       -- Use a preconfigured buffer appearance— can be 'default', 'powerline', or 'slanted'
       preset = "default",
       sidebar_filetypes = {
@@ -103,6 +98,7 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
+      "3rd/image.nvim", -- Optional image support
     },
     config = function()
       require("neo-tree").setup({
@@ -125,7 +121,9 @@ return {
   {
     "akinsho/toggleterm.nvim",
     version = "*",
-    opts = {},
+    opts = {
+      autochdir = true,
+    },
     keys = {
       -- suggested keymap
       --{ "<leader>t", "<cmd>ToggleTerm size=20<cr>", desc = "open terminal" },
