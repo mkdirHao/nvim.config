@@ -36,7 +36,7 @@ return {
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
       })
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, {desc="code show hover"})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "go define" })
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "go references" })
       vim.keymap.set("n", "<leader>gc", vim.lsp.buf.code_action, { desc = "go code action" })
