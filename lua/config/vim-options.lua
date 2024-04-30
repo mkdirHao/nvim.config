@@ -31,3 +31,11 @@ vim.keymap.set({'n'}, '<C-s>', ':w<ENTER>')
 
 -- no highlight for end search
 vim.keymap.set("n", "<leader>eh", ":nohlsearch<CR>",{desc="search obj no highlight"})
+
+-- set border with hover
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover, {
+    border = "single"
+  }
+)
